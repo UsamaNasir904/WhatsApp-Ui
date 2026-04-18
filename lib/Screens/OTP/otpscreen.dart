@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/Screens/Profile/profilescreen.dart';
 
 import '../../Widgets/uihelper.dart';
 
@@ -59,7 +60,7 @@ class OTPScreen extends StatelessWidget{
       ),
       floatingActionButton: UiHelper.CustomButton(
         callback: (){
-
+          Navigator.push(context,MaterialPageRoute(builder: (context) => ProfileScreen()));
         },
         buttonname: "Next",
       ),
